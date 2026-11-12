@@ -1,11 +1,17 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import time
 
 
+options=Options()
+options.add_argument("--headless=new")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-gpu")
 
-driver=webdriver.Chrome()
+driver = webdriver.Chrome(options=options)
 driver.get("https://blazedemo.com/")
 time.sleep(2)
 driver.find_element(By.CSS_SELECTOR, "input").click()
