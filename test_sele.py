@@ -32,6 +32,9 @@ driver.find_element(By.CSS_SELECTOR, f"{url} td:first-of-type").click()
 time.sleep(5)
 print(f"lowest value is {g}")
 
+def test_login():
+	print("login executed")
+
 
 	
 
