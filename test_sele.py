@@ -34,6 +34,7 @@ print(f"lowest value is {g}")
 
 def test_login():
 	print("login executed")
+	print("testing completed now")
 
 
 	
