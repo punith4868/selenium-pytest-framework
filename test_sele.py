@@ -33,8 +33,7 @@ time.sleep(5)
 print(f"lowest value is {g}")
 
 def test_login():
-	print("login executed")
-	print("testing completed now now")
+	print("login executed successfully")
 
 
 	
